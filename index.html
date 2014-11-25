@@ -1,0 +1,59 @@
+
+
+<HTML>
+<head><title></title>
+<SCRIPT>
+<!--
+var numero=001; 
+var max=3; //  ######### Quantidades de imagem a serem listadas. Neste caso estou usando apenas 3 imagens  
+
+function Proxima(){
+	numero++;
+	if (numero >= max)
+		numero=max;
+	document.imagem.src="FOTO" + numero + ".jpg"; // ####### "FOTO" é o nome da imagem + estenção
+	
+}
+
+
+function Anterior(){
+	numero--;
+	if (numero <= 1)
+		numero=1;
+	document.imagem.src="FOTO" + numero + ".jpg"; // ######## "FOTO" é o nome da imagem + estenção
+	
+}
+//-->
+</SCRIPT>
+
+
+<BODY background="" bgcolor="#00CCFF" bgproperties="fixed">
+
+<!--
+####################################################
+Imagem inicial
+####################################################
+//-->
+<center><IMG SRC="FOTO.jpg" NAME="imagem"></center><br>
+
+
+<!--
+#####################################################
+BOTÃO ANTERIOR E PRÓXIMO
+#####################################################
+//-->
+<p align="center"><a href="#" OnClick="Anterior();"> <<- Anterior </a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" OnClick="Proxima();"> Próximo ->> </a></p>
+
+
+<!--
+#####################################################
+COPYRIGHT 
+#####################################################
+//-->
+<p align="center">
+
+</center>
+
+
+</BODY>
+</HTML>
